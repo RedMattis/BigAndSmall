@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/GeneDef[defName="ArchiteMetabolism"]</xpath>
+    <value>
+      <exclusionTags>
+        <li>BS_Metabolism_Gene</li>
+      </exclusionTags>
+    </value>
+  </Operation>
+</Patch>

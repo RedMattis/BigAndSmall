@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Temperature -->
+  
+  <GeneDef ParentName="GeneMinTempBase">
+    <defName>MinTemp_HugeDecrease</defName>
+    <label>Cold Immunity</label>
+    <labelShortAdj>cold</labelShortAdj>
+    <description>Carriers of this gene are practically impervious to cold.</description>
+    <iconPath>UI/Icons/Genes/Gene_MinTemperatureLargeDecrease</iconPath>
+    <displayOrderInCategory>30</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-125</ComfyTemperatureMin>
+    </statOffsets>
+    <biostatMet>-3</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>ice</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <!-- <biostatArc>1</biostatArc> -->
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMaxTempBase">
+    <defName>MaxTemp_HugeIncrease</defName>
+    <label>Heat Immunity</label>
+    <labelShortAdj>hot</labelShortAdj>
+    <description>Carriers of this gene are practically impervious to heat, even mechanoids start to malfunction before the carrier does.</description>
+    <iconPath>UI/Icons/Genes/Gene_MaxTemperatureLargeIncrease</iconPath>
+    <displayOrderInCategory>80</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMax>300</ComfyTemperatureMax>
+    </statOffsets>
+    <biostatMet>-3</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>hot</symbol></li>
+        <li><symbol>heat</symbol></li>
+        <li><symbol>sun</symbol></li>
+        <li><symbol>sweat</symbol></li>
+        <li><symbol>bake</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <!-- <biostatArc>1</biostatArc> -->
+
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>FireImmunity</defName>
+    <label>fire immune</label> 
+    <labelShortAdj>fireproof</labelShortAdj> 
+    <description>Carriers of this gene are unfaced by fire.</description>
+    <iconPath>UI/Icons/Genes/Gene_FireResistant</iconPath>
+    <displayCategory>ResistanceAndWeakness</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <statFactors>
+      <Flammability>0.0</Flammability>
+    </statFactors>
+    <damageFactors>
+      <Flame>0.0</Flame>
+    </damageFactors>
+    <biostatMet>-3</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>foam</symbol></li>
+        <li><symbol>wet</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>foam</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <exclusionTags>
+      <li>FireDamage</li>
+    </exclusionTags>
+  </GeneDef>
+  
+  <!--Misc Functional-->
+  
+  <GeneDef>
+    <defName>Cannibal</defName>
+    <label>Cannibal</label>
+    <labelShortAdj>Cannibal</labelShortAdj>
+    <description>Carriers of this gene have a violent cannibalistic streak.</description>
+    <iconPath>GeneIcons/BS_Cannibal</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>Cannibal</def>
+      </li>
+    </forcedTraits>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>Undergrounder</defName>
+    <label>Undergrounder</label>
+    <labelShortAdj>Undergrounder</labelShortAdj>
+    <description>Carriers of this gene prefer being indoors.</description>
+    <iconPath>GeneIcons/BS_Undergrounder</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>Undergrounder</def>
+      </li>
+    </forcedTraits>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+  </GeneDef>
+  
+  <!--Cosmetics-->
+  
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_MediumRed</defName>
+    <label>Dark red hair</label>
+    <hairColorOverride>(131, 66, 66)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_MediumBlue</defName>
+    <label>Dark Blue hair</label>
+    <hairColorOverride>(66, 66, 131)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneHeadboneBase">
+		<defName>Jotun_Horns</defName>
+		<label>jotun horns</label>
+		<description>Carriers of this gene possess large impressive horns.</description>
+		<iconPath>GeneIcons/BS_JotunHorns</iconPath>
+		<graphicData>
+      <color>(180, 180, 180)</color>
+      <colorType>Hair</colorType>
+			<graphicPath>Humanlike/HeadAttachments/jotun_horns</graphicPath>
+			<layer>PostHeadgear</layer>
+      <useSkinShader>true</useSkinShader>
+    </graphicData>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>horn</symbol></li>
+        <li><symbol>devil</symbol></li>
+        <li><symbol>demon</symbol></li>
+        <li><symbol>luci</symbol></li>
+        <li><symbol>beelze</symbol></li>
+        <li><symbol>hell</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>horn</symbol></li>
+        <li><symbol>vil</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+	</GeneDef>
+  
+  <GeneDef ParentName="GeneHeadboneBase">
+    <defName>Jotun_Horns_Small</defName>
+    <label>small jotun horns</label>
+    <description>Carriers of this gene possess two small horns.</description>
+    <iconPath>UI/Icons/Genes/Gene_HeadboneMinihorns</iconPath>
+<graphicData>
+  <color>(200, 200, 200)</color>
+  <graphicPath>Humanlike/HeadAttachments/jotun_horns_small</graphicPath>
+  <colorType>Hair</colorType>
+  <layer>PostHeadgear</layer>
+  <useSkinShader>true</useSkinShader>
+</graphicData>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>horn</symbol></li>
+        <li><symbol>spike</symbol></li>
+        <li><symbol>devil</symbol></li>
+        <li><symbol>demon</symbol></li>
+        <li><symbol>luci</symbol></li>
+        <li><symbol>beelze</symbol></li>
+        <li><symbol>hell</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>horn</symbol></li>
+        <li><symbol>spike</symbol></li>
+        <li><symbol>vil</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_EVA_Gene</defName>
+    <label>Vacuum Sealed</label>
+    <description>Carriers of this gene can withstand the vacuum of space. This does nothing to help against the cold or slowness of movement in the void.</description>
+    <iconPath>GeneIcons/BS_Vacuum_Gene</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <statOffsets>
+      <SM_EVA_Level>2.0</SM_EVA_Level>
+    </statOffsets>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>2</biostatMet>
+  </GeneDef>
+  
+  <GeneDef ParentName="GenePainBase">
+    <defName>BS_Pain_None</defName>
+    <label>no pain</label>
+    <labelShortAdj>pain-dull</labelShortAdj>
+    <description>Carriers of this gene cannot feel pain. This can sometimes be advantagous but is oftentimes very dangerous to the individual</description>
+    <iconPath>UI/Icons/Genes/Gene_PainReduced</iconPath>
+    <displayOrderInCategory>29</displayOrderInCategory>
+    <painFactor>0</painFactor>
+    <biostatMet>0</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>dull</symbol></li>
+        <li><symbol>daze</symbol></li>
+        <li><symbol>tough</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef ParentName="CellInstabilityBase">
+    <defName>BS_Instability_Catastrophic</defName>
+    <label>catastrophic cell instability</label>
+    <description>Carriers of this gene need much less metabolic energy to stay alive, at the cost of catastrophically-reduced stability in their cell-replication machinery.</description>
+    <iconPath>UI/Icons/Genes/Gene_MajorCellInstability</iconPath>
+    <displayOrderInCategory>230</displayOrderInCategory>
+    <biostatMet>6</biostatMet>
+    <statFactors>
+      <LifespanFactor>0.4</LifespanFactor>
+      <CancerRate>20</CancerRate>
+      <ImmunityGainSpeed>0.85</ImmunityGainSpeed>
+    </statFactors>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>BS_Damaged_Genes</defName>
+    <label>corrupted xenogenes</label>
+    <description>Degraded xenogenes have gone berserk on this creatures, drastically reducing metabolic efficency. Can be completely supressed with Archite Metabolism.</description>
+    <iconPath>UI/Icons/Genes/Gene_MajorCellInstability</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <biostatMet>-6</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayOrderInCategory>110</displayOrderInCategory>
+    <exclusionTags>
+      <li>BS_Metabolism_Gene</li>
+    </exclusionTags>
+  </GeneDef>
+</Defs>
+

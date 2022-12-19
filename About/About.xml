@@ -1,0 +1,84 @@
+<ModMetaData>
+	<name>Big and Small Races</name>
+	<author>RedMattis</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+    </li>
+    <li>
+      <packageId>nals.facialanimation</packageId>
+			<displayName>[NL] Facial Animation - WIP</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=1635901197</steamWorkshopUrl>
+      <!-- <packageId>Mlie.VariedBodySizes</packageId> -->
+		</li>
+		<li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>brrainz.harmony</li>
+    <!-- <li>Mlie.VariedBodySizes</li> -->
+	</loadAfter>
+  <loadBefore>
+    <li>nals.facialanimation</li>
+    <li>Rooboid.Hdhair</li>
+    <li>VanillaExpanded.VHE</li>
+  </loadBefore>
+  <incompatibleWith>
+		<li>latta.infusion</li>
+	</incompatibleWith>
+	<packageId>RedMattis.BigSmall</packageId>
+	<description>Adds a whole bunch of Biotech Genes and Traits related to size along with Races based around said traits.
+
+&lt;size=24&gt;Main Features&lt;/size&gt;
+
+- New Genes, mostly related to pawn size.
+- New Traits for smaller size variations
+- New Xenohumans
+- 2 Optional Factions
+
+&lt;size=24&gt;Details&lt;/size&gt;
+
+The Mod adds a number of xenohumans, here are a few in no particular order:
+
+Ogers are lumbering large creatures creatures primarily motivated by fighting and food. Rumor has it some of them are amazing cooks; shame they prefer cooking other humanoids. A some ogers are particularily large and bad temperered.
+Jotun are fairly elusive giants known to hide up in the mountains. Some have an extreme temperature tolerance, and some claim they were created as a workforce.
+Half-Jotun are as the name might indicate smaller than Jotun, and sometimes claimed to have been the result of crossing with other xenohumans.
+Dvergr are small elusive bearded people often seeked out for their craftmanship which is said to be on par with that of the best glittertech factories. Some claim they were created to act as mechanics on spaceships where their small size was advantagous. 
+Nisse are sometimes claimed to have been created for similar purposes to the Dverger, but their unremarkably affinity for machines and impressive raport with animals indicate otherwise.
+
+The Mod also adds a number of new genes for you to harvest. I've tried to keep things balanced, so it hopefully shouldn't be any more broken than vanilla gene editing already is.
+Three of the genes are archotech genes, two of which are held by the Fire and Frost Jotun respectively.
+
+A number of size-related traits, these act like small to moderate multipliers for a pawn's size. They also have associated genes which can be found in traders inventories.
+
+Finally the mod adds a few statDefs (bodySizeModifier, SM_BodySizeMultiplier), the former acts as an offset, and the latter acts as a multiplier to a pawns size. The size increase from these two parameters has special effects on pawns, increasing their health, hunger, melee damage, among other things. I've generally set things up for the purpose of good gameplay rather than realism.
+
+&lt;size=24&gt;Issues&lt;/size&gt;
+
+This mod is in early development, and while I have not found any bugs in this version it is like everything else at your own risk. Some traits, factions, genes, reuse vanilla icons, the factions aren't quite fleshed out yet, and some descriptions might be incomp
+
+&lt;size=24&gt;Plans for the future&lt;/size&gt;
+
+- Actually finishing this mod.
+- Possibly splitting the mod into a framework and XML mod in case others want to use the C# parts for their own pawn-size related mods.
+- I'd also like to add some settings to the mod. You can of course use the Cherry Picker Mod to pick and choose what to use, but settings for stuff like hunger scaling, damage scaling (linear at the moment, could be made quadratic if you really want to die to ogres with wooden clubs...), etc.
+
+&lt;size=24&gt;Changelog&lt;/size&gt;
+
+v1.0.0: Alpha: Playable enough, but features are still being implemented.
+
+
+	</description>
+</ModMetaData>

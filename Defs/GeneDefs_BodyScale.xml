@@ -1,0 +1,88 @@
+<Defs>
+  <GeneCategoryDef>
+      <defName>Body_Size_Multiplier</defName>
+      <label>body size multiplier</label>
+      <displayPriorityInXenotype>702</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneDef Name="BodyMultiplierBase" Abstract="True">
+    <displayCategory>Body_Size</displayCategory>
+    <exclusionTags>
+      <li>Body_Size_Multiplier</li>
+    </exclusionTags>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <endogeneCategory>BodyType</endogeneCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyMultiplierBase">
+    <defName>Gigantism</defName>
+    <label>Gigantism</label>
+    <description>Carriers of this gene have genetic gigantism</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <forcedTraits>
+      <li>
+        <def>Gigantism</def>
+      </li>
+    </forcedTraits>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyMultiplierBase">
+    <defName>Large</defName>
+    <label>Large</label>
+    <description>Carriers of this gene have been modified to be larger</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <forcedTraits>
+      <li>
+        <def>Large</def>
+      </li>
+    </forcedTraits>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyMultiplierBase">
+    <defName>Small</defName>
+    <label>Small</label>
+    <description>Carriers of this gene have been modified to be a bit smaller</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>3</biostatMet>
+    <forcedTraits>
+      <li>
+        <def>Small</def>
+      </li>
+    </forcedTraits>
+
+    <exclusionTags>
+      <li>Tiny</li>
+    </exclusionTags>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyMultiplierBase">
+    <defName>Dwarfism</defName>
+    <label>Dwarfism</label>
+    <description>Carriers of this gene have genetic dwarfism</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>6</biostatMet>
+
+    <forcedTraits>
+      <li>
+        <def>Dwarfism</def>
+      </li>
+    </forcedTraits>
+    <exclusionTags>
+      <li>Tiny</li>
+    </exclusionTags>
+  </GeneDef>
+  
+</Defs>

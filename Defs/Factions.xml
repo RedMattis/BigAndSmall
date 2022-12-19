@@ -1,0 +1,238 @@
+<Defs>
+  <FactionDef ParentName="TribeBase">
+    <defName>BS_OgreFaction</defName>
+    <label>ogre tribe</label>
+    <leaderTitle>boss</leaderTitle>
+    <description>These ogres do little more than roam around their settlements in search of fights and food.</description>
+    <techLevel>Neolithic</techLevel>
+    <canStageAttacks>true</canStageAttacks>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+    </requiredMemes>
+    <colorSpectrum>
+      <li>(0.65, 0.28, 0)</li>
+      <li>(0.61, 0.45, 0.32)</li>
+    </colorSpectrum>
+    <factionIconPath>World/WorldObjects/Expanding/CannibalTribe</factionIconPath>
+    <permanentEnemy>true</permanentEnemy>
+    <disallowedMemes>
+      <li>Blindsight</li>
+      <li>AnimalPersonhood</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>31</configurationListOrderPriority>
+    <startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <xenotypeSet>
+      <xenotypeChances>
+        <BS_Ogre>0.91</BS_Ogre>
+        <BS_GreatOgre>0.05</BS_GreatOgre>
+        <BS_FrostJotun>0.025</BS_FrostJotun>
+        <BS_Jotun>0.008</BS_Jotun>
+        <BS_FireJotun>0.004</BS_FireJotun>
+        <BS_BrokenTitan>0.003</BS_BrokenTitan>
+        
+      </xenotypeChances>
+    </xenotypeSet>
+    
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(800, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <!-- . -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Tribal_Warrior>1</Tribal_Warrior>
+          <Tribal_Berserker>1</Tribal_Berserker>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fight. -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Tribal_Warrior>5</Tribal_Warrior>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <Tribal_Breacher>5</Tribal_Breacher>
+          <Tribal_Penitent>5</Tribal_Penitent>
+          <Tribal_Warrior>5</Tribal_Warrior>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Tribal_Warrior>20</Tribal_Warrior>
+          <Tribal_Child>10</Tribal_Child>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Tribal_Trader>1</Tribal_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <Tribal_Warrior>7</Tribal_Warrior>
+          <Tribal_Berserker>7</Tribal_Berserker>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Tribal_Warrior>7</Tribal_Warrior>
+          <Tribal_Berserker>7</Tribal_Berserker>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Miner>1</Tribal_Miner>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    
+  </FactionDef>
+  
+  
+  
+  
+  <FactionDef ParentName="OutlanderRoughBase">
+    <defName>BS_LittlePeople</defName>
+    <label>A little people union</label>
+    <description>A loose union mostly made up of small folk. They are highly distrustful of strangers.</description>
+    <factionIconPath>World/WorldObjects/Expanding/RoughPigUnion</factionIconPath>
+    <factionNameMaker>NamerFactionTribalNeanderthal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribalNeaderthal</settlementNameMaker>
+    <pawnSingular>smallfolk</pawnSingular>
+    <pawnsPlural>smallfolk</pawnsPlural>
+    <replacesFaction>OutlanderRough</replacesFaction>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_Dwarf>0.65</BS_Dwarf>
+        <BS_Gnome>0.30</BS_Gnome>
+        <BS_Jotun>0.03</BS_Jotun>
+        <BS_FireJotun>0.015</BS_FireJotun>
+        <BS_BrokenTitan>0.005</BS_BrokenTitan>
+      </xenotypeChances>
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+    </xenotypeSet>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <Tribal_Penitent>5</Tribal_Penitent>
+          <Tribal_Warrior>5</Tribal_Warrior>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+          <Villager>5</Villager>
+          <Town_Guard>10</Town_Guard>
+          <Grenadier_Destructive>1.5</Grenadier_Destructive>
+          <Mercenary_Slasher>7</Mercenary_Slasher>
+          <Mercenary_Gunner>10</Mercenary_Gunner>
+          <Mercenary_Elite>10</Mercenary_Elite>
+          <Town_Councilman>10</Town_Councilman>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Villager>20</Villager>
+          <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+          <Town_Guard>10</Town_Guard>
+          <Town_Councilman>10</Town_Councilman>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader_Pig>1</Town_Trader_Pig>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <Villager>20</Villager>
+          <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+          <Town_Guard>10</Town_Guard>
+          <Town_Councilman>10</Town_Councilman>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Villager>20</Villager>
+          <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+          <Town_Guard>10</Town_Guard>
+          <Town_Councilman>10</Town_Councilman>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Miner>1</Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Hunter>1</Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Logger>1</Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Farmer>1</Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+</Defs>

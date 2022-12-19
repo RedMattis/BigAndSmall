@@ -1,0 +1,224 @@
+<Defs>
+  <GeneCategoryDef>
+      <defName>Body_Size</defName>
+      <label>body size</label>
+      <displayPriorityInXenotype>701</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneDef Name="BodyFrameBase" Abstract="True">
+    <displayCategory>Body_Size</displayCategory>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <endogeneCategory>BodyType</endogeneCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>JotunFrame</defName>
+    <label>Jotun Frame</label>
+    <!-- <randomChosen>true</randomChosen> -->
+    <description>Carriers of this gene grow to an truly impressive size.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_JotunFrame</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-5</biostatMet>
+    <statOffsets>
+      <SM_BodySizeOffset>1.5</SM_BodySizeOffset>
+    </statOffsets>
+    <statFactors>
+      <MiningSpeed>2.0</MiningSpeed>
+      <DeepDrillingSpeed>1.5</DeepDrillingSpeed>
+      <ConstructionSpeed>1.35</ConstructionSpeed>
+    </statFactors>
+    <selectionWeight>0.2</selectionWeight>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>HalfJotunFrame</defName>
+    <label>Half Jotun Frame</label>
+    <description>Carriers of this gene grow much larger than baseline humans. Half Jotun tend to make fast long strides.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_JotunFrame</iconPath>
+    <displayOrderInCategory>1100</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <statFactors>
+      <MiningSpeed>1.5</MiningSpeed>
+      <ConstructionSpeed>1.25</ConstructionSpeed>
+      <DeepDrillingSpeed>1.25</DeepDrillingSpeed>
+      <MoveSpeed>1.1</MoveSpeed>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>0.75</SM_BodySizeOffset>
+    </statOffsets>
+    <selectionWeight>0.2</selectionWeight>
+  </GeneDef>
+
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>OgreFrame</defName>
+    <label>Ogre Frame</label>
+    <randomChosen>true</randomChosen>
+    <description>Carriers of this gene grow to a large lumbering size, but they are clumsy and their size causes them health issues. Their bulk and saggy flesh hinders their movement, especially when wearing heavy armour. They are amazingly sturdy however.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_OgreFrame</iconPath>
+    <displayOrderInCategory>1000</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <statFactors>
+      <IncomingDamageFactor>0.80</IncomingDamageFactor>
+      <LifespanFactor>0.8</LifespanFactor>
+      <MiningSpeed>1.40</MiningSpeed>
+      <ConstructionSpeed>1.2</ConstructionSpeed>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>1.0</SM_BodySizeOffset>
+      <MoveSpeed>-0.1</MoveSpeed>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+    </statOffsets>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_Clothed">
+        <statOffsets>
+          <MoveSpeed>-0.3</MoveSpeed>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.9</MoveSpeed>
+        </statFactors>
+      </li>
+    </conditionalStatAffecters>
+    <selectionWeight>0.2</selectionWeight>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>GreatOgreFrame</defName>
+    <label>Great Ogre Frame</label>
+    <description>Carriers of this gene grow to a huge lumbering scale, but they are clumsy and their size causes them health issues. Their bulk and flesh hinders their movement, especially when wearing heavy armour. They are amazingly sturdy however.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_OgreFrame</iconPath>
+    <displayOrderInCategory>1051</displayOrderInCategory>
+    <biostatCpx>4</biostatCpx>
+    <biostatMet>-5</biostatMet>
+    <statFactors>
+      <IncomingDamageFactor>0.75</IncomingDamageFactor>
+      <LifespanFactor>0.6</LifespanFactor>
+      <MiningSpeed>1.6</MiningSpeed>
+      <ConstructionSpeed>1.3</ConstructionSpeed>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>2.0</SM_BodySizeOffset>
+      <MoveSpeed>-0.3</MoveSpeed>
+      <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+    </statOffsets>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_Clothed">
+        <statOffsets>
+          <MoveSpeed>-0.4</MoveSpeed>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.85</MoveSpeed>
+        </statFactors>
+      </li>
+    </conditionalStatAffecters>
+    <selectionWeight>0.2</selectionWeight>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>TitanFrame</defName>
+    <label>Titan Frame</label>
+    <randomChosen>true</randomChosen>
+    <!-- <prerequisite>JotunFrame</prerequisite> -->
+    <description>Carriers of this gene grow to an absurd size made possible only with Archite technology. Too large to properly make use of power-armor and exoskeletons their bodies they were instead hollowed out and filled with bionics, their massive frames were supported by huge amounts of a Luciferium-like drug and archite energy cores.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_JotunFrame</iconPath>
+    <displayOrderInCategory>411</displayOrderInCategory>
+    <biostatCpx>5</biostatCpx>
+    <biostatMet>-10</biostatMet>
+    <statFactors>
+      <IncomingDamageFactor>0.75</IncomingDamageFactor>
+      <MiningSpeed>3.0</MiningSpeed>
+      <DeepDrillingSpeed>2.0</DeepDrillingSpeed>
+      <ConstructionSpeed>1.6</ConstructionSpeed>
+      <MoveSpeed>1.3</MoveSpeed>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>3</SM_BodySizeOffset>
+      <MoveSpeed>1.0</MoveSpeed>
+    </statOffsets>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_Clothed">
+        <statOffsets>
+          <MoveSpeed>-1.5</MoveSpeed>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.7</MoveSpeed>
+        </statFactors>
+      </li>
+    </conditionalStatAffecters>
+    <biostatArc>3</biostatArc>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <displayCategory>Archite</displayCategory>
+    <selectionWeight>0.6</selectionWeight>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>DwarfFrame</defName>
+    <label>Dwarf Frame</label>
+    <description>Carriers of this gene are on the short but somewhat stout side.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_Small</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>5</biostatMet>
+    <statFactors>
+      <MiningSpeed>0.95</MiningSpeed>
+      <ConstructionSpeed>0.95</ConstructionSpeed>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>-0.35</SM_BodySizeOffset>
+      <MoveSpeed>-0.2</MoveSpeed>
+    </statOffsets>
+    <selectionWeight>0.2</selectionWeight>
+  </GeneDef>
+  
+  <!--Incompatible with Genes that make the character smaller. No smaller-than-squirells characters.-->
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>GnomeFrame</defName>
+    <label>Nisse Frame</label>
+    <description>Carriers of this gene are tiny.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+      <li>Tiny</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_Diminutive</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>10</biostatMet>
+    <statOffsets>
+      <SM_BodySizeOffset>-0.6</SM_BodySizeOffset>
+      <MoveSpeed>-0.6</MoveSpeed>
+    </statOffsets>
+    <statFactors>
+      <MiningSpeed>0.6</MiningSpeed>
+      <DeepDrillingSpeed>0.6</DeepDrillingSpeed>
+      <ConstructionSpeed>0.6</ConstructionSpeed>
+    </statFactors>
+    <painFactor>1.2</painFactor>
+    <selectionWeight>0.2</selectionWeight>
+  </GeneDef>
+</Defs>

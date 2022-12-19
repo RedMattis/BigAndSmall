@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <StatDef>
+        <defName>SM_BodySizeOffset</defName>
+        <label>body size offset</label>
+        <alwaysHide>true</alwaysHide>
+        <minValue>-0.8</minValue>
+        <toStringStyle>FloatOne</toStringStyle>
+        <defaultBaseValue>0.0</defaultBaseValue>
+    </StatDef>
+    
+    <StatDef>
+        <defName>SM_BodySizeMultiplier</defName>
+        <label>body size multipler</label>
+        <alwaysHide>true</alwaysHide>
+        <minValue>0.05</minValue>
+        <toStringStyle>PercentZero</toStringStyle>
+        <defaultBaseValue>1.0</defaultBaseValue>
+    </StatDef>
+    ´
+    <StatDef>
+        <defName>SM_EVA_Level</defName>
+        <label>EVA Level Override</label>
+        <alwaysHide>true</alwaysHide>
+        <minValue>-1</minValue>
+        <toStringStyle>Integer</toStringStyle>
+        <defaultBaseValue>-1</defaultBaseValue>
+    </StatDef>
+</Defs>
