@@ -9,12 +9,11 @@
 			<packageId>Ludeon.RimWorld.Biotech</packageId>
 			<displayName>Biotech</displayName>
     </li>
-    <li>
-      <packageId>nals.facialanimation</packageId>
-			<displayName>[NL] Facial Animation - WIP</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=1635901197</steamWorkshopUrl>
-      <!-- <packageId>Mlie.VariedBodySizes</packageId> -->
-		</li>
+    <!-- <li> -->
+      <!-- <packageId>nals.facialanimation</packageId> -->
+			<!-- <displayName>[NL] Facial Animation - WIP</displayName> -->
+			<!-- <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=1635901197</steamWorkshopUrl> -->
+		<!-- </li> -->
 		<li>
         <packageId>brrainz.harmony</packageId>
         <displayName>Harmony</displayName>

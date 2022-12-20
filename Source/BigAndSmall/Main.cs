@@ -20,6 +20,7 @@ namespace BigAndSmall
         public static HumanoidPawnScaler humnoidScaler;
 
         public static Pawn activePawn;
+
         public static bool performScaleCalculations = true;
 
         public static readonly List<ThingDef> AllPawnTypes;

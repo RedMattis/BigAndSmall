@@ -80,6 +80,7 @@
       <LifespanFactor>0.8</LifespanFactor>
       <MiningSpeed>1.40</MiningSpeed>
       <ConstructionSpeed>1.2</ConstructionSpeed>
+      <DeepDrillingSpeed>1.1</DeepDrillingSpeed>
     </statFactors>
     <statOffsets>
       <SM_BodySizeOffset>1.0</SM_BodySizeOffset>
@@ -89,10 +90,10 @@
     <conditionalStatAffecters>
       <li Class="ConditionalStatAffecter_Clothed">
         <statOffsets>
-          <MoveSpeed>-0.3</MoveSpeed>
+          <MoveSpeed>-0.25</MoveSpeed>
         </statOffsets>
         <statFactors>
-          <MoveSpeed>0.9</MoveSpeed>
+          <MoveSpeed>0.90</MoveSpeed>
         </statFactors>
       </li>
     </conditionalStatAffecters>
@@ -115,6 +116,7 @@
       <LifespanFactor>0.6</LifespanFactor>
       <MiningSpeed>1.6</MiningSpeed>
       <ConstructionSpeed>1.3</ConstructionSpeed>
+      <DeepDrillingSpeed>1.2</DeepDrillingSpeed>
     </statFactors>
     <statOffsets>
       <SM_BodySizeOffset>2.0</SM_BodySizeOffset>
@@ -124,10 +126,10 @@
     <conditionalStatAffecters>
       <li Class="ConditionalStatAffecter_Clothed">
         <statOffsets>
-          <MoveSpeed>-0.4</MoveSpeed>
+          <MoveSpeed>-0.3</MoveSpeed>
         </statOffsets>
         <statFactors>
-          <MoveSpeed>0.85</MoveSpeed>
+          <MoveSpeed>0.80</MoveSpeed>
         </statFactors>
       </li>
     </conditionalStatAffecters>
@@ -139,7 +141,7 @@
     <label>Titan Frame</label>
     <randomChosen>true</randomChosen>
     <!-- <prerequisite>JotunFrame</prerequisite> -->
-    <description>Carriers of this gene grow to an absurd size made possible only with Archite technology. Too large to properly make use of power-armor and exoskeletons their bodies they were instead hollowed out and filled with bionics, their massive frames were supported by huge amounts of a Luciferium-like drug and archite energy cores.</description>
+    <description>Carriers of this gene grow to an absurd size made possible only with Archite technology. Too large to properly make use of power-armor and exoskeletons their bodies they were instead hollowed out and filled with bionics, their massive frames were supported by huge amounts of a Luciferium-like drug and glitter tech energy cores.</description>
     <exclusionTags>
       <li>BodySize</li>
     </exclusionTags>
@@ -152,19 +154,19 @@
       <MiningSpeed>3.0</MiningSpeed>
       <DeepDrillingSpeed>2.0</DeepDrillingSpeed>
       <ConstructionSpeed>1.6</ConstructionSpeed>
-      <MoveSpeed>1.3</MoveSpeed>
+      <MoveSpeed>1.2</MoveSpeed>
     </statFactors>
     <statOffsets>
       <SM_BodySizeOffset>3</SM_BodySizeOffset>
       <MoveSpeed>1.0</MoveSpeed>
     </statOffsets>
     <conditionalStatAffecters>
-      <li Class="ConditionalStatAffecter_Clothed">
+      <li Class="ConditionalStatAffecter_Clothed"> <!--Replace with the equavalent for armor-->
         <statOffsets>
-          <MoveSpeed>-1.5</MoveSpeed>
+          <MoveSpeed>-1.0</MoveSpeed>
         </statOffsets>
         <statFactors>
-          <MoveSpeed>0.7</MoveSpeed>
+          <MoveSpeed>0.6</MoveSpeed>
         </statFactors>
       </li>
     </conditionalStatAffecters>

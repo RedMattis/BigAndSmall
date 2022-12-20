@@ -227,6 +227,12 @@
       <CancerRate>20</CancerRate>
       <ImmunityGainSpeed>0.85</ImmunityGainSpeed>
     </statFactors>
+    <forcedTraits>
+      <li>
+        <def>Immunity</def>
+        <degree>-1</degree>
+      </li>
+    </forcedTraits>
   </GeneDef>
   
   <GeneDef>
@@ -242,5 +248,25 @@
       <li>BS_Metabolism_Gene</li>
     </exclusionTags>
   </GeneDef>
+  
+  <GeneDef>
+    <defName>BS_Corrupted</defName>
+    <label>throughly corrupted</label>
+    <description>This creature has been twisted by rogue nanomachines and xenogenes and is extremely mentally unstable. This is very very bad. There might be an Archite gene that can supress this.</description>
+    <iconPath>UI/Icons/Genes/Gene_MajorCellInstability</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <biostatMet>-6</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayOrderInCategory>110</displayOrderInCategory>
+    <statOffsets>
+      <MentalBreakThreshold>-1.0</MentalBreakThreshold>
+    </statOffsets>
+    <exclusionTags>
+      <li>BS_Metabolism_Gene</li>
+    </exclusionTags>
+    <aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
+  </GeneDef>
+  
+  
 </Defs>
 

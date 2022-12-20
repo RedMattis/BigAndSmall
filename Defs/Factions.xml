@@ -32,7 +32,7 @@
         <BS_Jotun>0.008</BS_Jotun>
         <BS_FireJotun>0.004</BS_FireJotun>
         <BS_BrokenTitan>0.003</BS_BrokenTitan>
-        
+        <BS_Corrupterd_Titan MayRequire="sarg.alphagenes">0.003</BS_Corrupterd_Titan>
       </xenotypeChances>
     </xenotypeSet>
     
